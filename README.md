@@ -53,6 +53,4 @@ ChatGPTFolderWizard/
 - **Conversation Saving**:
   - Save ChatGPT conversations to specific folders for easy access and organization.
 
----
 
-This README file should provide all the information necessary for someone to understand the folder structure, install the extension, and start using it in Chrome.
