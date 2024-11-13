@@ -1,0 +1,32 @@
+#chatgpt-custom-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f9f9f9;
+    border-left: 1px solid #ccc;
+    padding: 15px;
+    z-index: 10000;
+    overflow-y: auto;
+}
+
+#chatgpt-custom-sidebar h3 {
+    text-align: center;
+}
+
+#chatgpt-custom-sidebar button,
+#chatgpt-custom-sidebar .item {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 1em;
+}
+
+.folder-list,
+.prompt-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

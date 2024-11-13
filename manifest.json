@@ -1,34 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "ChatGPT Folders, Search & Prompts",
-  "description": "Organize, save, and search ChatGPT conversations with folders, tags, and prompts.",
+  "name": "ChatGPT Sidebar Organizer",
   "version": "1.0",
-  "permissions": [
-    "storage",
-    "activeTab",
-    "scripting"
-  ],
-  "host_permissions": [
-    "https://chat.openai.com/*"
-  ],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
-    }
-  },
-  "background": {
-    "service_worker": "background.js"
-  },
+  "description": "Organize ChatGPT conversations directly in the ChatGPT sidebar.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://chatgpt.com/*"],
   "content_scripts": [
     {
-      "matches": ["https://chat.openai.com/*"],
-      "js": ["content.js"]
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["content.js"],
+      "css": ["sidebar.css"]
     }
   ],
-  "options_page": "options.html",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
